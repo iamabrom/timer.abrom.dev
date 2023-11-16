@@ -12,11 +12,11 @@ document.getElementById('startButton').addEventListener('click', function() {
 
     document.getElementById('title').textContent = title;
     document.getElementById('inputFields').style.display = 'none';
-    document.getElementById('stopButton').style.display = 'inline';
+    document.getElementById('restartButton').style.display = 'inline';
     startTimer(time);
 });
 
-document.getElementById('stopButton').addEventListener('click', function() {
+document.getElementById('restartButton').addEventListener('click', function() {
     clearInterval(interval);
     clearInterval(forwardTimerInterval);
     document.getElementById('timer').textContent = "00:00";
@@ -60,5 +60,5 @@ function forwardCountingTimer() {
 
 function toggleInputFields(show) {
     document.getElementById('inputFields').style.display = show ? 'block' : 'none';
-    document.getElementById('stopButton').style.display = show ? 'none' : 'inline';
+    document.getElementById('restartButton').style.display = show ? 'none' : 'inline';
 }
