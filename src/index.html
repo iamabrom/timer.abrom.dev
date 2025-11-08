@@ -3,7 +3,20 @@
 <head>
     <title>Countdown Timer</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script async src="https://analytics.ad3.dev/c3po.js" data-ackee-server="https://analytics.ad3.dev" data-ackee-domain-id="e0b3ffa1-f9aa-4b14-afdc-3055a273fdab" data-ackee-opts='{ "ignoreLocalhost": true, "detailed": true }'></script>
+    <!-- Matomo -->
+    <script>
+      var _paq = window._paq = window._paq || [];
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="https://analytics.abrom.dev/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '5']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Matomo Code -->
 </head>
 <body>
     <div id="app">
